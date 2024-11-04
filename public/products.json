@@ -1,0 +1,206 @@
+[
+    {
+      "id": 1,
+      "name": "MacBook Air 13-inch",
+      "image": "https://i.ibb.co.com/BfDGhFx/mac1.png",
+      "category": "Laptops",
+      "price": 99.99,
+      "description": "The 13-inch MacBook Air with M1 chip, designed for performance and efficiency.",
+      "specification": [
+        "Apple M1",
+        "8GB",
+        "256GB SSD",
+        "13.3-inch Retina Display",
+        "Up to 18 hours"
+      ],
+      "availability": false,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "iPhone 13 Pro",
+      "image": "https://i.ibb.co.com/cw7J4hh/i-Phone-13-Pro.png",
+      "category": "IPhones",
+      "price": 95.99,
+      "description": "The iPhone 13 Pro features a stunning 6.1-inch Super Retina XDR display, A15 Bionic chip, and an advanced triple-camera system.",
+      "Specification": [
+        "A15 Bionic Chip",
+        "6GB",
+        "128GB",
+        "6.1-inch Super Retina XDR Display",
+        "Up to 22 hours"
+      ],
+      "availability": true,
+      "rating": 3.9
+    },
+    {
+      "id": 3,
+      "name": "MacBook Pro 14-inch",
+      "image": "https://i.ibb.co.com/j5zX0cK/mac2.png",
+      "category": "Laptops",
+      "price": 89.99,
+      "description": "The 14-inch MacBook Pro with M1 Pro chip for power users and creatives.",
+      "specification": [
+        "Apple M1 Pro",
+        "16GB",
+        "512GB SSD",
+        "14.2-inch Liquid Retina XDR Display",
+        "Up to 17 hours"
+      ],
+      "availability": true,
+      "rating": 4.2
+    },
+    {
+      "id": 4,
+      "name": "Apple Watch Series 7",
+      "image": "https://i.ibb.co.com/drzSGjX/smart-watch-2.webp",
+      "category": "Smart Watches",
+      "price": 79.00,
+      "description": "The Apple Watch Series 7 features a larger and more durable display, advanced health monitoring, and seamless integration with Apple devices.",
+      "Specification": [
+        "1.9-inch Retina LTPO OLED",
+        "Up to 18 hours",
+        "Bluetooth 5.0, Wi-Fi, LTE",
+        "Heart rate, ECG, blood oxygen",
+        "iOS"
+      ],
+      "availability": true,
+      "rating": 3.8
+    },
+    {
+      "id": 5,
+      "name": "Dell XPS 13",
+      "image": "https://i.ibb.co.com/Synf2rZ/laptop1.png",
+      "category": "Laptops",
+      "price": 109.09,
+      "description": "The Dell XPS 13 offers stunning visuals with a near-borderless 13.4-inch display, Intel Core processors, and exceptional performance.",
+      "Specification": [
+        "Intel Core i7",
+        "16GB",
+        "512GB SSD",
+        "13.4-inch FHD+ Display",
+        "Up to 12 hours"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "id": 6,
+      "name": "iPhone 16 Pro",
+      "image": "https://i.ibb.co.com/cw7J4hh/i-Phone-13-Pro.png",
+      "category": "IPhones",
+      "price": 69.33,
+      "description": "The iPhone 13 Pro features a stunning 6.1-inch Super Retina XDR display, A15 Bionic chip, and an advanced triple-camera system.",
+      "Specification": [
+        "A16 Bionic Chip",
+        "6GB",
+        "128GB",
+        "6.1-inch Super Retina XDR Display",
+        "Up to 22 hours"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "id": 7,
+      "name": "Samsung Galaxy S23",
+      "image": "https://i.ibb.co.com/2SYDZy8/samsung-s23.webp",
+      "category": "Phones",
+      "price": 77.50,
+      "description": "The Samsung Galaxy S21 Ultra boasts a 6.8-inch Dynamic AMOLED display, Snapdragon 888 processor, and a 108MP main camera for superior photography.",
+      "Specification": [
+        "Snapdragon 888",
+        "12GB",
+        "256GB",
+        "6.8-inch Dynamic AMOLED 2X",
+        "Up to 20 hours"
+      ],
+      "availability": true,
+      "rating": 3.5
+    },
+    {
+      "id": 8,
+      "name": "MacBook Air 13-inch",
+      "image": "https://i.ibb.co.com/BfDGhFx/mac1.png",
+      "category": "Laptops",
+      "price": 100.03,
+      "description": "The MacBook Air 13-inch is thin, light, and powerful with Apple's M1 chip, delivering up to 18 hours of battery life.",
+      "Specification": [
+        "Apple M1",
+        "8GB",
+        "256GB SSD",
+        "13.3-inch Retina Display",
+        "Up to 18 hours"
+      ],
+      "availability": true,
+      "rating": 3.8
+    },
+    {
+      "id": 9,
+      "name": "Fitbit Versa 3",
+      "image": "https://i.ibb.co.com/LgXVBzX/smart-watch.webp",
+      "category": "Smart Watches",
+      "price": 55.10,
+      "description": "The Fitbit Versa 3 is a health and fitness smartwatch with built-in GPS, heart rate monitoring, and integration with Google Assistant and Amazon Alexa.",
+      "Specification": [
+        "1.58-inch AMOLED",
+        "Up to 6 days",
+        "Bluetooth, Wi-Fi, GPS",
+        "Heart rate, SpO2, sleep tracking",
+        "iOS, Android"
+      ],
+      "availability": true,
+      "rating": 3.6
+    },
+    {
+      "id": 10,
+      "name": "Google Pixel 6",
+      "image": "https://i.ibb.co.com/9bvmMtH/google.webp",
+      "category": "Phones",
+      "price": 78.80,
+      "description": "The Google Pixel 6 offers a 6.4-inch OLED display, Google Tensor processor, and an exceptional camera system powered by Google’s computational photography.",
+      "Specification": [
+        "Google Tensor",
+        "8GB",
+        "128GB",
+        "6.4-inch OLED",
+        "Up to 24 hours"
+      ],
+      "availability": false,
+      "rating": 4.5
+    },
+    {
+      "id": 11,
+      "name": "HP Spectre x360",
+      "image": "https://i.ibb.co.com/Synf2rZ/laptop1.png",
+      "category": "Laptops",
+      "price": 299.09,
+      "description": "The HP Spectre x360 is a premium 2-in-1 laptop with an elegant design, powerful specs, and long battery life.",
+      "Specification": [
+        "Intel Core i7",
+        "16GB",
+        "512GB SSD",
+        "13.3-inch FHD Touchscreen",
+        "Up to 15 hours"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "id": 12,
+      "name": "Lenovo X1 Carbon",
+      "image": "https://i.ibb.co.com/Synf2rZ/laptop1.png",
+      "category": "Laptops",
+      "price": 60.68,
+      "description": "The Lenovo ThinkPad X1 Carbon is a business-grade laptop with a sleek design, top performance, and great security features.",
+      "Specification": [
+        "Intel Core i7",
+        "16GB",
+        "1TB SSD",
+        "14-inch FHD Display",
+        "Up to 19 hours"
+      ],
+      "availability": false,
+      "rating": 4.5
+    }
+]
