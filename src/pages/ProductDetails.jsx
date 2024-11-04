@@ -1,16 +1,23 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Rating from "react-rating";
-import { setStoredCardList } from "../utilitys/AddToDB";
+import { getStoredWishList, setStoredCardList, setStoredWishList } from "../utilitys/AddToDB";
 
 const ProductDetails = () => {
   const {itemId} = useParams()
   const productId = parseInt(itemId);
   const productsData = useLoaderData()
   const [product, setProduct] = useState({})
+  const [isHeart, setIsHeart] = useState(false);
   useEffect(()=>{
     const findedProduct = productsData.find(product => product.id === productId)
     setProduct(findedProduct || {});
+
+    const isWishList = getStoredWishList();
+    const isExist = isWishList.find(id => JSON.parse(id) === findedProduct.id)
+    if(isExist){
+      setIsHeart(true)
+    }
   }, [productsData, setProduct])
 
   const {id,rating,availability,specification=[], description, price, image, name} = product || {}
@@ -18,6 +25,11 @@ const ProductDetails = () => {
   const handleAddtoCart = (id, name)=>{
     setStoredCardList(id, name)
   }
+  const handleWishlist = (id, name)=>{
+    setStoredWishList(id, name)
+    setIsHeart(true)
+  }
+
   return (
     <div className="bg-gray-100 pb-12">
       <div className="bg-[#9538E2] text-white text-center xs:px-5 md:px-0 pt-10 pb-44">
@@ -62,6 +74,8 @@ const ProductDetails = () => {
                   onClick={()=>handleAddtoCart(id, name)}
                   className="btn bg-[#9538E2] text-white hover:text-black font-bold text-base">Add to Card <i className="fa-solid fa-cart-shopping"></i></button>
                   <button 
+                  disabled={isHeart}
+                  onClick={()=>handleWishlist(id, name)}
                   className="btn font-bold text-lg rounded-full flex items-center bg-white"><i className="fa-regular fa-heart"></i></button>
                 </div> 
               </div>
