@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-import { Link, Outlet} from "react-router-dom";
+import { Link, Outlet, useLocation} from "react-router-dom";
 
 const Dashboard = () => {
 
+   const location= useLocation()
 
   useEffect(()=>{
     document.title = "Dashboard || Gadget Heaven"
@@ -14,14 +15,15 @@ const Dashboard = () => {
         <h2 className="font-bold text-4xl text-white">Dashboard</h2>
         <p className="font-bold text-base text-white">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br className="hidden md:block" /> the coolest accessories, we have it all!</p>
         <div className="flex gap-5 mt-5">
+          <Link  
+           className={`btn px-10 rounded-full font-bold text-base 
+            ${location.pathname==='/dashboard' ? 'text-[#9538E2] bg-white hover:bg-white' :'bg-transparent text-white hover:bg-transparent border-white'}`}
+          to='/dashboard'>
+            Cart</Link>
           <Link 
-          onClick={()=>handleActivity('cart')}
-          to='/dashboard' 
-          className="btn px-10 rounded-full text-[#9538E2] font-bold text-base hover:bg-white">Cart</Link>
-          <Link 
-          onClick={()=>handleActivity('wish')}
-          to='/dashboard/wishlist' 
-          className="btn px-7 rounded-full bg-transparent border-white text-white font-bold text-base hover:bg-transparent">Wishlist</Link>
+          className={`btn px-7 rounded-full font-bold text-base 
+            ${location.pathname=== '/dashboard/wishlist' ? 'text-[#9538E2] bg-white hover:bg-white' :'bg-transparent text-white hover:bg-transparent border-white'}`}
+          to='/dashboard/wishlist'>Wishlist</Link>
         </div>
       </div>
       <div>

@@ -10,10 +10,10 @@ const Navbar = () => {
           <a className={`font-bold text-2xl ml-2  ${pathname === '/' ? "text-white" : 'text-black'}`}>Gadget Heaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className={`menu menu-horizontal px-1 flex gap-5 ${pathname === '/' ? "text-white" : 'text-black'}`}>
-            <li><NavLink className={`font-bold text-base`} to='/'>Home</NavLink></li>
-            <li><NavLink className={`font-bold text-base`} to='/statistics'>Statistics</NavLink></li>
-            <li><NavLink className={`font-bold text-base`} to='/dashboard'>Dashboard</NavLink></li>
+          <ul className={`menu menu-horizontal px-1 flex items-center gap-5 ${pathname === '/' ? "text-white" : 'text-black'}`}>
+           <NavLink className={({ isActive })=>`px-3 rounded-md py-2 font-bold text-base ${isActive ? 'bg-transparent border-2 border-white ' : ''}`} to='/'>Home</NavLink>
+            <NavLink className={({ isActive })=>`px-3 rounded-md py-2 font-bold text-base ${isActive ? 'bg-[#9538E2] text-white':''}`} to='/statistics'>Statistics</NavLink>
+            <NavLink className={({ isActive })=>`px-3 rounded-md py-2 font-bold text-base ${isActive ? 'bg-[#9538E2] text-white':''}`} to='/dashboard'>Dashboard</NavLink>
           </ul>
         </div>
         <div className="navbar-end gap-3">

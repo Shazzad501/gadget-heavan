@@ -9,24 +9,22 @@ const Footer = () => {
   </div>
   <div className="flex justify-around w-full">
     <nav className="flex flex-col gap-3">
-      <h6 className="footer-title font-bold text-lg">Services</h6>
-      <Link className="link link-hover font-semibold text-sm text-black">Branding</Link>
-      <Link className="link link-hover font-semibold text-sm text-black">Design</Link>
-      <Link className="link link-hover font-semibold text-sm text-black">Marketing</Link>
-      <Link className="link link-hover font-semibold text-sm text-black">Advertisement</Link>
+      <h6 className="footer-title font-bold text-lg">Our Products</h6>
+      <Link className="link link-hover font-semibold text-sm text-black">Laptops</Link>
+      <Link className="link link-hover font-semibold text-sm text-black">Mobile</Link>
+      <Link className="link link-hover font-semibold text-sm text-black">Iphone</Link>
+      <Link className="link link-hover font-semibold text-sm text-black">Watch</Link>
     </nav>
     <nav className="flex flex-col gap-3">
-      <h6 className="footer-title font-bold text-lg">Company</h6>
-      <Link className="link link-hover font-semibold text-sm text-black">About us</Link>
-      <Link className="link link-hover font-semibold text-sm text-black">Contact</Link>
-      <Link className="link link-hover font-semibold text-sm text-black">Jobs</Link>
-      <Link className="link link-hover font-semibold text-sm text-black">Press kit</Link>
+      <h6 className="footer-title font-bold text-lg">Pages</h6>
+      <Link to='/' className="link link-hover font-semibold text-sm text-black">Home</Link>
+      <Link to='/statistics' className="link link-hover font-semibold text-sm text-black">Statistics</Link>
+      <Link to='/dashboard'  className="link link-hover font-semibold text-sm text-black">Dashboard</Link>
     </nav>
     <nav className="flex flex-col gap-3">
       <h6 className="footer-title font-bold text-lg">Legal</h6>
       <Link className="link link-hover font-semibold text-sm text-black">Terms of use</Link>
       <Link className="link link-hover font-semibold text-sm text-black">Privacy policy</Link>
-      <Link className="link link-hover font-semibold text-sm text-black">Cookie policy</Link>
     </nav>
   </div>
 </footer>
