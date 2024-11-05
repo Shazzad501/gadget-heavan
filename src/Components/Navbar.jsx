@@ -10,10 +10,10 @@ const Navbar = () => {
           <a className={`font-bold text-2xl ml-2  ${pathname === '/' ? "text-white" : 'text-black'}`}>Gadget Heaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className={`menu menu-horizontal px-1 flex gap-5 ${pathname === '/' ? "text-white" : ''}`}>
-            <NavLink className={`font-bold text-base  ${pathname === '/' ? "text-white" : 'text-black'}`} to='/'>Home</NavLink>
-            <NavLink className={`font-bold text-base  ${pathname === '/' ? "text-white" : 'text-black'}`} to='/statistics'>Statistics</NavLink>
-            <NavLink className={`font-bold text-base  ${pathname === '/' ? "text-white" : 'text-black'}`} to='/dashboard'>Dashboard</NavLink>
+          <ul className={`menu menu-horizontal px-1 flex gap-5 ${pathname === '/' ? "text-white" : 'text-black'}`}>
+            <li><NavLink className={`font-bold text-base`} to='/'>Home</NavLink></li>
+            <li><NavLink className={`font-bold text-base`} to='/statistics'>Statistics</NavLink></li>
+            <li><NavLink className={`font-bold text-base`} to='/dashboard'>Dashboard</NavLink></li>
           </ul>
         </div>
         <div className="navbar-end gap-3">
@@ -39,9 +39,9 @@ const Navbar = () => {
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 gap-3 shadow">
-                <NavLink className='font-bold text-base text-black' to='/'>Home</NavLink>
-                <NavLink className='font-bold text-base text-black' to='/statistics'>Statistics</NavLink>
-                <NavLink className='font-bold text-base text-black' to='/dashboard'>Dashboard</NavLink>
+                <li><NavLink className='font-bold text-base text-black' to='/'>Home</NavLink></li>
+                <li><NavLink className='font-bold text-base text-black' to='/statistics'>Statistics</NavLink></li>
+                <li><NavLink className='font-bold text-base text-black' to='/dashboard'>Dashboard</NavLink></li>
             </ul>
           </div>
         </div>

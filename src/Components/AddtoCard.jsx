@@ -9,17 +9,20 @@ const AddtoCard = () => {
   const [addCard, setAddCard] = useState([])
   const [cost, setCost] = useState(0)
   const [payment, setPayment] = useState(0)
+  const [pdisable, setPdisable] = useState(true)
 
 
   useEffect(()=>{
     const addToCardId = getStoredCartList();
     const convertIntCardId = addToCardId.map(id => parseInt(id));
+    console.log(convertIntCardId)
     const filterCard = allCard.filter(card => convertIntCardId.includes(card.id)) 
     setAddCard(filterCard);
 
     const totalCost = filterCard.reduce((sum, card) => sum + card.price, 0).toFixed(2);
     setCost(totalCost);
 
+    setPdisable(filterCard.length === 0)
   }, [allCard, setAddCard])
 
   const handleSort = ()=>{
@@ -33,6 +36,7 @@ const AddtoCard = () => {
     document.getElementById('my_modal_1').showModal()
     setPayment(cost)
     setCost(0)
+    setPdisable(true);
   }
 
   const handleRemoveToLS = (id, name, cardPrice)=>{
@@ -44,6 +48,8 @@ const AddtoCard = () => {
     setAddCard(filterCard);
 
     setCost((cost - cardPrice).toFixed(2))
+
+    setPdisable(filterCard.length === 0)
   }
   return (
     <div className='w-11/12 mx-auto'>
@@ -54,7 +60,7 @@ const AddtoCard = () => {
         <div className="flex gap-3 items-center">
           <p className="font-bold text-base">Total Cost: {cost}</p>
           <button onClick={handleSort} className="btn btn-sm rounded-full font-bold text-base bg-white text-[#9538E2] border-[#9538E2] hover:bg-white">Sort by Price</button>
-          <button onClick={()=>handlePurchase(cost)} className="btn btn-sm rounded-full bg-[#9538E2] text-white hover:bg-[#9538E2] border-[#9538E2] font-bold text-base">Purchase</button>
+          <button disabled={pdisable} onClick={()=>handlePurchase(cost)} className="btn btn-sm rounded-full bg-[#9538E2] text-white hover:bg-[#9538E2] border-[#9538E2] font-bold text-base">Purchase</button>
         </div>
       </div>
       <div className="flex flex-col gap-4">

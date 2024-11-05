@@ -17,7 +17,7 @@ const setStoredCardList = (id, name)=>{
     storedCard.push(id);
     const storedCardList = JSON.stringify(storedCard);
     localStorage.setItem('card-list', storedCardList);
-    toast.success(`${name} successfully added!`);
+    toast.success(`${name} successfully added to cart!`);
 }
 
 const removecard = (idx, name)=>{
@@ -45,7 +45,7 @@ const setStoredWishList = (id, name)=>{
     storedWish.push(id);
     const storedWishList = JSON.stringify(storedWish);
     localStorage.setItem('wish-list', storedWishList);
-    toast.success(`${name} successfully added!`);
+    toast.success(`${name} successfully added to wishlist!`);
 }
 
 const removeWish = (idx, name)=>{

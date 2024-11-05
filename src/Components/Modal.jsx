@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Modal = ({payment}) => {
   return (
@@ -16,7 +18,9 @@ const Modal = ({payment}) => {
           <p className='font-bold text-base'>Total:{payment}$</p>
           <div className="modal-action">
             <form method="dialog">
-              <button className="btn w-full">Close</button>
+              <Link 
+              to="/"
+              className="btn w-full">Close</Link>
             </form>
           </div>
         </div>
