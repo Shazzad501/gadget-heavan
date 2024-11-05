@@ -18,6 +18,7 @@ const ProductDetails = () => {
     if(isExist){
       setIsHeart(true)
     }
+    document.title = "Details || Gadget Heaven"
   }, [productsData, setProduct])
 
   const {id,rating,availability,specification=[], description, price, image, name} = product || {}

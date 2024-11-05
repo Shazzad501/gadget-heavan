@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { Link, Outlet} from "react-router-dom";
 
 const Dashboard = () => {
+
+  useEffect(()=>{
+    document.title = "Dashboard || Gadget Heaven"
+  }, [])
   return (
     <div>
       <div className="bg-[#9538E2] flex gap-3 flex-col items-center text-center py-10">

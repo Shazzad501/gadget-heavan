@@ -3,11 +3,13 @@ import { useLoaderData } from "react-router-dom";
 import { getStoredCartList, removecard } from "../utilitys/AddToDB";
 import Modal from "./Modal";
 
+
 const AddtoCard = () => {
   const allCard = useLoaderData()
   const [addCard, setAddCard] = useState([])
   const [cost, setCost] = useState(0)
   const [payment, setPayment] = useState(0)
+
 
   useEffect(()=>{
     const addToCardId = getStoredCartList();
