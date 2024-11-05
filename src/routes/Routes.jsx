@@ -37,7 +37,7 @@ const routes = createBrowserRouter([
         element: <Dashboard></Dashboard>,
         children:[
           {
-            path: '/dashboard/addtocard',
+            path: '/dashboard',
             element: <AddtoCard></AddtoCard>,
             loader: ()=> fetch('../products.json')
           },
