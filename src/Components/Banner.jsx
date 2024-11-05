@@ -6,7 +6,7 @@ const Banner = () => {
       <p className="font-semibold text-base text-white">Explore the latest gadgets that will take your experience to <br className="hidden md:block" /> the next level. From smart devices to the coolest accessories, we have it all!</p>
       <button className=" btn rounded-full  bg-white font-bold text-sm text-[#9538E2]  hover:bg-white">Shop Now</button>
     </div>
-    <div className="p-3 border-2 border-white  backdrop-blur-sm rounded-xl mx-auto w-10/12 md:w-9/12 h-[450px] -mt-44">
+    <div className="p-3 border-2 border-white  backdrop-blur-sm rounded-xl mx-auto w-10/12 md:w-9/12 h-[500px] -mt-44">
       <div className="w-full h-full">
         <img 
         className="w-full h-full rounded-xl"
